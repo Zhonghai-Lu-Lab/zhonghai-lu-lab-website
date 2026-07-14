@@ -1,0 +1,31 @@
+columns:
+  - title: Research
+    links:
+      - {label: Research Areas, url: "#research"}
+      - {label: Projects, url: "#research"}
+      - {label: Publications, url: "#publications"}
+      - {label: Awards, url: "#awards"}
+  - title: People
+    links:
+      - {label: Prof. Zhonghai Lu, url: "authors/zhonghai-lu/"}
+      - {label: Team, url: "#team"}
+      - {label: Alumni, url: "#team"}
+      - {label: Collaborators, url: "#team"}
+  - title: Updates
+    links:
+      - {label: News, url: "#news"}
+      - {label: Events, url: "#hero"}
+      - {label: Weekly Updates, url: "#news"}
+      - {label: Archive, url: "news/"}
+  - title: Opportunities
+    links:
+      - {label: Join Us, url: "#join-us"}
+      - {label: Open Positions, url: "#join-us"}
+      - {label: Application Guide, url: "#join-us"}
+      - {label: FAQ, url: "#join-us"}
+  - title: Contact
+    links:
+      - {label: Contact Us, url: "#contact"}
+      - {label: Location, url: "#contact"}
+      - {label: Email, url: "#contact"}
+      - {label: Academic Links, url: "#team"}

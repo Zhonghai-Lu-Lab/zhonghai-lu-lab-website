@@ -1,0 +1,3 @@
+{{ define "main" }}
+<div class="listing-shell"><header class="listing-header"><p class="section-index">Zhonghai Lu’s Lab</p><h1>{{ .Title }}</h1>{{ with .Content }}<div>{{ . }}</div>{{ end }}</header><div class="listing-grid">{{ range .RegularPages.ByDate.Reverse }}<a class="listing-card" href="{{ .RelPermalink }}"><span>{{ with .Date }}{{ .Format "2006.01.02" }}{{ end }}</span><h2>{{ .Title }}</h2><p>{{ .Params.summary | default .Summary }}</p></a>{{ end }}</div></div>
+{{ end }}

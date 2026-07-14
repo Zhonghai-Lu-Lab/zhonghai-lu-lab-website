@@ -1,0 +1,36 @@
+name:
+  display: 鲁中海教授
+  given: 中海
+  family: 鲁
+role: 教授 · 课题组负责人
+bio: |
+  鲁中海现任香港科技大学（广州）功能枢纽微电子学域教授。其研究涵盖片上网络与片上系统、计算系统架构、嵌入式机器学习与人工智能加速器、芯粒互联网络，以及电子芯片与系统的故障预测与健康管理。
+affiliations:
+  - name: 香港科技大学（广州）功能枢纽微电子学域
+interests:
+  - 片上网络与芯粒互联网络
+  - 计算系统架构
+  - 嵌入式机器学习与人工智能加速器
+  - 电子系统可靠性与健康管理
+education:
+  - course: 电子系统设计博士
+    institution: 瑞典皇家理工学院（KTH）
+    year: 2007
+  - course: 创新与增长工商管理硕士
+    institution: 芬兰图尔库大学
+    year: 2012
+  - course: 片上系统设计硕士
+    institution: 瑞典皇家理工学院（KTH）
+    year: 2002
+  - course: 无线电电子学学士
+    institution: 北京师范大学
+    year: 1989
+experience:
+  - role: 教授
+    organization: 香港科技大学（广州）
+    period: 现任
+    summary: 功能枢纽微电子学域。
+  - role: 电子系统设计教授
+    organization: 瑞典皇家理工学院（KTH）
+    period: 曾任
+    summary: 曾任嵌入式系统硕士项目主任及电子与嵌入式系统部门教学负责人。

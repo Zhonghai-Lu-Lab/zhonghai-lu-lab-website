@@ -1,0 +1,1 @@
+{{ define "main" }}<div class="listing-shell"><header class="listing-header"><p class="section-index">Archive</p><h1>{{ .Title }}</h1></header><div class="listing-grid">{{ range .Pages }}<a class="listing-card" href="{{ .RelPermalink }}"><h2>{{ .Title }}</h2><p>{{ .Params.summary | default .Summary }}</p></a>{{ end }}</div></div>{{ end }}

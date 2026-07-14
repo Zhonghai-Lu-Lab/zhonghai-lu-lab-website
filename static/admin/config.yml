@@ -1,0 +1,67 @@
+backend:
+  name: github
+  repo: linelyxzz11/zhonghai-lu-lab-website
+  branch: main
+  base_url: https://DECAP-OAUTH-WORKER.example.workers.dev
+
+publish_mode: editorial_workflow
+media_folder: static/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: news_en
+    label: News (English)
+    folder: content/en/news
+    create: true
+    path: '{{slug}}/index'
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Date, name: date, widget: datetime, time_format: false}
+      - {label: Category, name: category, widget: string}
+      - {label: Summary, name: summary, widget: text}
+      - {label: Body, name: body, widget: markdown}
+  - name: news_zh
+    label: 新闻（中文）
+    folder: content/zh/news
+    create: true
+    path: '{{slug}}/index'
+    fields:
+      - {label: 标题, name: title, widget: string}
+      - {label: 日期, name: date, widget: datetime, time_format: false}
+      - {label: 分类, name: category, widget: string}
+      - {label: 摘要, name: summary, widget: text}
+      - {label: 正文, name: body, widget: markdown}
+  - name: events_en
+    label: Carousel Events (English)
+    folder: content/en/events
+    create: true
+    path: '{{slug}}/index'
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Date, name: date, widget: datetime, time_format: false}
+      - {label: Kicker, name: kicker, widget: string}
+      - {label: Summary, name: summary, widget: text}
+      - {label: Hero image, name: hero, widget: image}
+      - {label: Image alt text, name: hero_alt, widget: string}
+      - {label: Button text, name: button, widget: string}
+      - {label: Button target, name: target, widget: string, hint: "Use a section anchor such as #news or a verified page path such as /publications/paper-slug/"}
+      - {label: Show in carousel, name: featured, widget: boolean, default: true}
+      - {label: Order, name: weight, widget: number, default: 10}
+      - {label: Body, name: body, widget: markdown}
+  - name: events_zh
+    label: 轮播事件（中文）
+    folder: content/zh/events
+    create: true
+    path: '{{slug}}/index'
+    fields:
+      - {label: 标题, name: title, widget: string}
+      - {label: 日期, name: date, widget: datetime, time_format: false}
+      - {label: 栏目短标题, name: kicker, widget: string}
+      - {label: 摘要, name: summary, widget: text}
+      - {label: 主图, name: hero, widget: image}
+      - {label: 图片替代文本, name: hero_alt, widget: string}
+      - {label: 按钮文字, name: button, widget: string}
+      - {label: 按钮目标, name: target, widget: string, hint: "填写栏目锚点（如 #news）或已核实的详情页路径（如 /zh/publications/paper-slug/）"}
+      - {label: 进入轮播, name: featured, widget: boolean, default: true}
+      - {label: 顺序, name: weight, widget: number, default: 10}
+      - {label: 正文, name: body, widget: markdown}

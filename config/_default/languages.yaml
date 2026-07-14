@@ -5,18 +5,16 @@
 # Default language
 en:
   locale: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  contentDir: content/en
+  label: English
+  weight: 1
 
 # Uncomment the lines below to configure your website in a second language.
-#zh:
-#  locale: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+zh:
+  locale: zh-Hans
+  contentDir: content/zh
+  label: 中文
+  title: 鲁中海教授研究组
+  weight: 2
+  params:
+    description: 鲁中海教授研究组双语网站展示框架。

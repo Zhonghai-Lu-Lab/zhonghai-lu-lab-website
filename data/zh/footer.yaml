@@ -1,0 +1,31 @@
+columns:
+  - title: 研究
+    links:
+      - {label: 研究方向, url: "#research"}
+      - {label: 研究项目, url: "#research"}
+      - {label: 论文成果, url: "#publications"}
+      - {label: 荣誉奖项, url: "#awards"}
+  - title: 团队
+    links:
+      - {label: 鲁中海教授, url: "authors/zhonghai-lu/"}
+      - {label: 团队成员, url: "#team"}
+      - {label: 往届成员, url: "#team"}
+      - {label: 合作伙伴, url: "#team"}
+  - title: 动态
+    links:
+      - {label: 新闻, url: "#news"}
+      - {label: 重要事件, url: "#hero"}
+      - {label: 每周更新, url: "#news"}
+      - {label: 历史归档, url: "news/"}
+  - title: 机会
+    links:
+      - {label: 加入我们, url: "#join-us"}
+      - {label: 开放岗位, url: "#join-us"}
+      - {label: 申请指南, url: "#join-us"}
+      - {label: 常见问题, url: "#join-us"}
+  - title: 联系
+    links:
+      - {label: 联系我们, url: "#contact"}
+      - {label: 地址, url: "#contact"}
+      - {label: 邮箱, url: "#contact"}
+      - {label: 学术链接, url: "#team"}

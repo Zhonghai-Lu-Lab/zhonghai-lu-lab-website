@@ -1,0 +1,7 @@
+{{- $person := index hugo.Data.authors .slug -}}
+{{- if eq .lang "zh" -}}
+  {{- with index hugo.Data.zh.authors .slug -}}
+    {{- $person = merge $person . -}}
+  {{- end -}}
+{{- end -}}
+{{- return $person -}}

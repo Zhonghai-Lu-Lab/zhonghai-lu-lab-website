@@ -1,0 +1,52 @@
+schema: hugoblox/author/v1
+slug: zhonghai-lu
+is_owner: true
+weight: 1
+name:
+  display: Prof. Zhonghai Lu
+  given: Zhonghai
+  family: Lu
+role: Professor · Principal Investigator
+bio: |
+  Zhonghai Lu is a Professor in the Thrust of Microelectronics at The Hong Kong University of Science and Technology (Guangzhou). His research spans Network-on-Chip and System-on-Chip, computing system architecture, embedded machine learning and AI accelerators, chiplet networks, and prognostics and health management of electronic chips and systems.
+affiliations:
+  - name: Thrust of Microelectronics, HKUST(GZ)
+avatar: https://hrapi.hkust-gz.edu.cn/photo/img?key=00011A1000000001Q9NT
+links:
+  - icon: website
+    url: https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/LU-Zhonghai/zhl
+    label: HKUST(GZ) faculty profile
+  - icon: scholar
+    url: https://scholar.google.com/citations?user=8qbwszcAAAAJ&hl=sv
+    label: Google Scholar
+  - icon: at-symbol
+    url: mailto:zhl@hkust-gz.edu.cn
+    label: Email Prof. Zhonghai Lu
+interests:
+  - Network-on-Chip and Chiplet Networks
+  - Computing System Architecture
+  - Embedded Machine Learning and AI Accelerators
+  - Reliability and PHM of Electronic Systems
+education:
+  - course: PhD in Electronic Systems Design
+    institution: KTH Royal Institute of Technology
+    year: 2007
+  - course: MBA in Innovation and Growth
+    institution: University of Turku
+    year: 2012
+  - course: MSc in System-on-Chip Design
+    institution: KTH Royal Institute of Technology
+    year: 2002
+  - course: BSc in Radio-electronics
+    institution: Beijing Normal University
+    year: 1989
+experience:
+  - role: Professor
+    organization: The Hong Kong University of Science and Technology (Guangzhou)
+    period: Current
+    summary: Thrust of Microelectronics, Function Hub.
+  - role: Professor of Electronic Systems Design
+    organization: KTH Royal Institute of Technology
+    period: Previous appointment
+    summary: Former Program Director for the Embedded Systems master's programme and Director of Studies in Electronics and Embedded Systems.
+awards: []

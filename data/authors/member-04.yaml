@@ -1,0 +1,10 @@
+schema: hugoblox/author/v1
+slug: member-04
+weight: 40
+name: {display: Yushang Jin, given: Yushang, family: Jin}
+role: PhD Student
+bio: PhD student in Microelectronics at HKUST(GZ). Detailed biography, research interests, and contact links are awaiting confirmation by the member.
+affiliations:
+  - name: Thrust of Microelectronics, HKUST(GZ)
+interests: [Research interests to be confirmed]
+links: []

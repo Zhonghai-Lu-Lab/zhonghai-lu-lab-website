@@ -1,0 +1,25 @@
+members:
+  - slug: zhonghai-lu
+    group: Principal Investigator
+    weight: 1
+  - slug: member-01
+    group: PhD Students
+    weight: 10
+  - slug: member-02
+    group: PhD Students
+    weight: 20
+  - slug: member-03
+    group: PhD Students
+    weight: 30
+  - slug: member-04
+    group: PhD Students
+    weight: 40
+  - slug: member-05
+    group: PhD Students
+    weight: 50
+  - slug: member-06
+    group: PhD Students
+    weight: 60
+  - slug: member-07
+    group: PhD Students
+    weight: 70
