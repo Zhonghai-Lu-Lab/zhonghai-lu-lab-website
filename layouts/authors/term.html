@@ -1,4 +1,111 @@
 {{ define "main" }}
-{{ $slug := .Data.Term }}{{ $zh := eq .Site.Language.Lang "zh" }}{{ $person := partial "lab/person.html" (dict "slug" $slug "lang" .Site.Language.Lang) }}
-<article class="profile-shell"><div class="profile-hero"><div class="profile-visual">{{ with $person.avatar }}<img src="{{ . | relURL }}" alt="{{ $person.name.display }}">{{ else }}<div class="profile-monogram">{{ substr $person.name.display 0 1 }}</div><span>{{ if $zh }}个人照片待提供{{ else }}Portrait to be supplied{{ end }}</span>{{ end }}</div><div class="profile-intro"><p class="section-index">{{ $person.role }}</p><h1>{{ $person.name.display }}</h1>{{ range $person.affiliations }}<p class="profile-affiliation">{{ .name }}</p>{{ end }}<p class="profile-bio">{{ $person.bio }}</p>{{ with $person.links }}<nav class="profile-links profile-links-large" aria-label="{{ if $zh }}学术与联系链接{{ else }}Academic and contact links{{ end }}">{{ range . }}<a href="{{ .url }}"{{ if hasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }} aria-label="{{ .label }}" title="{{ .label }}">{{ partial "lab/profile-icon.html" .icon }}</a>{{ end }}</nav>{{ end }}</div></div>{{ with .Content }}<section class="profile-section profile-content"><h2>{{ if $zh }}个人经历{{ else }}Profile{{ end }}</h2>{{ . }}</section>{{ end }}{{ with $person.interests }}<section class="profile-section"><h2>{{ if $zh }}研究兴趣{{ else }}Research interests{{ end }}</h2><div class="profile-tags">{{ range . }}<span>{{ . }}</span>{{ end }}</div></section>{{ end }}{{ with $person.education }}<section class="profile-section"><h2>{{ if $zh }}教育经历{{ else }}Education{{ end }}</h2><div class="profile-detail-list">{{ range . }}<article><strong>{{ .course }}</strong><span>{{ .institution }}</span><small>{{ .year }}</small></article>{{ end }}</div></section>{{ end }}{{ with $person.experience }}<section class="profile-section"><h2>{{ if $zh }}工作与研究经历{{ else }}Experience{{ end }}</h2><div class="profile-detail-list">{{ range . }}<article><strong>{{ .role }}</strong><span>{{ .organization }}</span><small>{{ .period }}</small>{{ with .summary }}<p>{{ . }}</p>{{ end }}</article>{{ end }}</div></section>{{ end }}{{ with $person.awards }}<section class="profile-section"><h2>{{ if $zh }}荣誉与奖项{{ else }}Awards{{ end }}</h2><div class="profile-detail-list">{{ range . }}<article><strong>{{ .title }}</strong><small>{{ .year }}</small></article>{{ end }}</div></section>{{ end }}{{ with .Pages }}<section class="profile-section"><h2>{{ if $zh }}相关成果与动态{{ else }}Related work and updates{{ end }}</h2><div class="listing-grid">{{ range . }}<a class="listing-card" href="{{ .RelPermalink }}"><span>{{ .Section }}</span><h3>{{ .Title }}</h3></a>{{ end }}</div></section>{{ end }}</article>
+{{ $slug := .Data.Term }}
+{{ $zh := eq .Site.Language.Lang "zh" }}
+{{ $person := partial "lab/person.html" (dict "slug" $slug "lang" .Site.Language.Lang) }}
+{{ if eq $slug "zhonghai-lu" }}
+  {{ $bibliography := index hugo.Data "zhonghai-lu-publications" }}
+  <article class="faculty-profile">
+    <header class="faculty-card">
+      <div class="faculty-photo">
+        {{ with $person.avatar }}<img src="{{ . | safeURL }}" alt="{{ $person.name.display }}">{{ end }}
+      </div>
+      <div class="faculty-identity">
+        <h1>{{ $person.name.display }}</h1>
+        {{ with $person.name.chinese }}<p class="faculty-chinese-name">{{ . }}</p>{{ end }}
+        <p class="faculty-degree"><strong>{{ $person.degree }}</strong><br>{{ $person.degree_institution }}</p>
+        <p class="faculty-position">{{ $person.role }}</p>
+        {{ range $person.affiliations }}<p class="faculty-affiliation">{{ .name }}</p>{{ end }}
+      </div>
+      <div class="faculty-contact">
+        <a href="mailto:{{ $person.email }}"><span>Email</span><strong>{{ $person.email }}</strong></a>
+        <p><span>{{ if $zh }}办公室{{ else }}Office{{ end }}</span><strong>{{ $person.office }}</strong></p>
+        <div class="faculty-id-list">
+          {{ range $person.profile_ids }}
+            <a href="{{ .url }}" target="_blank" rel="noopener"><span>{{ .label }}</span><strong>{{ .value }}</strong></a>
+          {{ end }}
+        </div>
+      </div>
+    </header>
+
+    <nav class="faculty-tabs" aria-label="{{ if $zh }}个人主页栏目{{ else }}Profile sections{{ end }}">
+      <a href="#overview">{{ if $zh }}个人简介{{ else }}Overview{{ end }}</a>
+      <a href="#profile-publications">{{ if $zh }}论文成果{{ else }}Publications{{ end }}</a>
+      <a href="#research-interests">{{ if $zh }}研究方向{{ else }}Research Interests{{ end }}</a>
+      <a href="#rpg-supervision">{{ if $zh }}研究生指导{{ else }}RPG Supervision{{ end }}</a>
+    </nav>
+
+    <section id="overview" class="faculty-section faculty-overview">
+      <h2>{{ if $zh }}个人简介{{ else }}Biography{{ end }}</h2>
+      <div class="overview-block"><h3>{{ if $zh }}现任职务{{ else }}Position{{ end }}</h3><p>{{ $person.overview.position }}</p><p>{{ $person.overview.previous }}</p></div>
+      <div class="overview-block"><h3>{{ if $zh }}研究概述{{ else }}Research{{ end }}</h3>{{ range $person.overview.research }}<p>{{ . }}</p>{{ end }}<p>{{ $person.overview.support }}</p><p>{{ $person.overview.publications }}</p></div>
+      <div class="overview-columns">
+        <div class="overview-block"><h3>{{ if $zh }}学术荣誉{{ else }}Research Awards{{ end }}</h3><ul>{{ range $person.overview.awards }}<li>{{ . }}</li>{{ end }}</ul></div>
+        <div class="overview-block"><h3>{{ if $zh }}学术服务{{ else }}Professional Services{{ end }}</h3><ul>{{ range $person.overview.services }}<li>{{ . }}</li>{{ end }}</ul></div>
+      </div>
+      <div class="overview-block education-brief"><h3>{{ if $zh }}教育背景{{ else }}Education{{ end }}</h3><p>{{ $person.overview.education }}</p></div>
+    </section>
+
+    <section id="profile-publications" class="faculty-section faculty-publications">
+      <div class="faculty-section-heading">
+        <div><p class="section-kicker">HKUST(GZ)</p><h2>{{ if $zh }}重点论文{{ else }}Selected Publications{{ end }}</h2></div>
+        <a href="https://repository.hkust-gz.edu.cn/" target="_blank" rel="noopener">{{ if $zh }}港科广知识库{{ else }}HKUST(GZ) Repository{{ end }}</a>
+      </div>
+      <div class="selected-publication-list">
+        {{ range $person.featured_publications }}
+          <article>
+            <span>{{ .year }} · {{ .venue }}</span>
+            <h3><a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a></h3>
+            <p>{{ .authors }}</p>
+          </article>
+        {{ end }}
+      </div>
+
+      <div class="complete-bibliography-heading">
+        <div><p class="section-kicker">DBLP</p><h2>{{ if $zh }}完整论文列表{{ else }}Complete Bibliography{{ end }}</h2></div>
+        <p>{{ $bibliography.count }} {{ if $zh }}条记录，按年份折叠显示。点击论文标题访问 DOI 或 DBLP 永久页面。{{ else }}records grouped by year. Each title links to its DOI or permanent DBLP record.{{ end }}</p>
+      </div>
+      <div class="publication-years">
+        {{ range $index, $group := $bibliography.years }}
+          <details class="publication-year"{{ if eq $index 0 }} open{{ end }}>
+            <summary><strong>{{ $group.year }}</strong><span>{{ $group.count }} {{ if $zh }}篇{{ else }}publications{{ end }}</span></summary>
+            <ol>
+              {{ range $group.items }}
+                <li>
+                  <h3><a href="{{ .link }}" target="_blank" rel="noopener">{{ .title }}</a></h3>
+                  <p>{{ delimit .authors ", " }}</p>
+                  <span>{{ .venue }}{{ with .pages }} · {{ . }}{{ end }}</span>
+                </li>
+              {{ end }}
+            </ol>
+          </details>
+        {{ end }}
+      </div>
+      <p class="publication-source">{{ if $zh }}完整书目来源：{{ else }}Complete bibliography source: {{ end }}<a href="{{ $bibliography.source_url }}" target="_blank" rel="noopener">DBLP</a> · {{ $bibliography.retrieved }}</p>
+    </section>
+
+    <section id="research-interests" class="faculty-section faculty-research">
+      <p class="section-kicker">RESEARCH INTEREST</p>
+      <h2>{{ if $zh }}研究方向{{ else }}Research Interests{{ end }}</h2>
+      <div class="research-interest-grid">{{ range $person.interests }}<article><span></span><h3>{{ . }}</h3></article>{{ end }}</div>
+    </section>
+
+    <section id="rpg-supervision" class="faculty-section faculty-rpg">
+      <p class="section-kicker">RPG SUPERVISION</p>
+      <h2>{{ if $zh }}研究型研究生指导{{ else }}Research Postgraduate (RPG) Supervision{{ end }}</h2>
+      <div class="rpg-grid">
+        {{ range sort (where hugo.Data.team.members "group" "PhD Students") "weight" }}
+          {{ $student := partial "lab/person.html" (dict "slug" .slug "lang" $.Site.Language.Lang) }}
+          <a class="rpg-card" href="{{ printf "authors/%s/" .slug | relLangURL }}">
+            <span>{{ substr $student.name.display 0 1 }}</span>
+            <div><h3>{{ $student.name.display }}</h3><p>{{ if $zh }}博士研究生 · 微电子学{{ else }}Doctor of Philosophy · Microelectronics{{ end }}</p></div>
+          </a>
+        {{ end }}
+      </div>
+    </section>
+  </article>
+{{ else }}
+  <article class="profile-shell">
+    <div class="profile-hero"><div class="profile-visual">{{ with $person.avatar }}<img src="{{ . | relURL }}" alt="{{ $person.name.display }}">{{ else }}<div class="profile-monogram">{{ substr $person.name.display 0 1 }}</div>{{ end }}</div><div class="profile-intro"><h1>{{ $person.name.display }}</h1>{{ range $person.affiliations }}<p class="profile-affiliation">{{ .name }}</p>{{ end }}<p class="profile-bio">{{ $person.bio }}</p>{{ with $person.links }}<nav class="profile-links profile-links-large">{{ range . }}<a href="{{ .url }}"{{ if hasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }} aria-label="{{ .label }}" title="{{ .label }}">{{ partial "lab/profile-icon.html" .icon }}</a>{{ end }}</nav>{{ end }}</div></div>
+  </article>
+{{ end }}
 {{ end }}

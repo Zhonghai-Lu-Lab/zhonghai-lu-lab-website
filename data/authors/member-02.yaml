@@ -6,11 +6,11 @@ name:
   given: Jingwei
   family: Li
 role: PhD Student
-bio: PhD student in Microelectronics at HKUST(GZ). Detailed biography and research interests are awaiting confirmation by the member.
+bio: PhD student in Microelectronics at HKUST(GZ).
 affiliations:
   - name: Thrust of Microelectronics, HKUST(GZ)
 interests:
-  - Research interests to be confirmed
+  - Microelectronics
 links:
   - icon: at-symbol
     url: mailto:jli739@connect.hkust-gz.edu.cn

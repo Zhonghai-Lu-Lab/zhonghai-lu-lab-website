@@ -2,35 +2,36 @@ name:
   display: 鲁中海教授
   given: 中海
   family: 鲁
-role: 教授 · 课题组负责人
+  chinese: 鲁中海
+role: 教授
+degree: 电子系统设计博士
+degree_institution: 瑞典皇家理工学院（KTH），2007
+office: E3 L6 608
 bio: |
-  鲁中海现任香港科技大学（广州）功能枢纽微电子学域教授。其研究涵盖片上网络与片上系统、计算系统架构、嵌入式机器学习与人工智能加速器、芯粒互联网络，以及电子芯片与系统的故障预测与健康管理。
+  鲁中海现任香港科技大学（广州）功能枢纽微电子学域教授，主要研究片上网络、芯粒网络与体系结构、嵌入式机器学习、人工智能加速，以及电子芯片与系统可靠性。
 affiliations:
-  - name: 香港科技大学（广州）功能枢纽微电子学域
+  - name: 香港科技大学（广州）微电子学域
 interests:
-  - 片上网络与芯粒互联网络
-  - 计算系统架构
-  - 嵌入式机器学习与人工智能加速器
-  - 电子系统可靠性与健康管理
-education:
-  - course: 电子系统设计博士
-    institution: 瑞典皇家理工学院（KTH）
-    year: 2007
-  - course: 创新与增长工商管理硕士
-    institution: 芬兰图尔库大学
-    year: 2012
-  - course: 片上系统设计硕士
-    institution: 瑞典皇家理工学院（KTH）
-    year: 2002
-  - course: 无线电电子学学士
-    institution: 北京师范大学
-    year: 1989
-experience:
-  - role: 教授
-    organization: 香港科技大学（广州）
-    period: 现任
-    summary: 功能枢纽微电子学域。
-  - role: 电子系统设计教授
-    organization: 瑞典皇家理工学院（KTH）
-    period: 曾任
-    summary: 曾任嵌入式系统硕士项目主任及电子与嵌入式系统部门教学负责人。
+  - 片上网络与芯粒网络
+  - 计算系统体系结构
+  - 嵌入式机器学习
+  - 电子系统可靠性
+overview:
+  position: 现任香港科技大学（广州）教授。
+  previous: 曾任瑞典皇家理工学院电子系统设计教授，研究方向为可信与自主系统；曾担任嵌入式系统硕士项目主任，以及电子与嵌入式系统部门教学负责人。
+  research:
+    - 我的研究涵盖片上网络与片上系统、计算机体系结构、电子设计自动化、嵌入式系统，以及电子芯片与系统的故障预测与健康管理。
+    - 我的课题组目前重点开展网内处理、嵌入式机器学习与人工智能加速器、芯粒网络与体系结构，以及电子芯片与系统健康管理研究，面向性能、功耗和可靠性协同优化。
+  support: 2011—2013 年，我获得 Intel Corporation 研究资助，并于 2014 年和 2020 年两次获得瑞典研究理事会个人项目资助。
+  publications: 我已发表学术论文 240 余篇。下方完整书目以 DBLP 记录为基础，并提供 Google Scholar 与 ORCID 入口。
+  awards:
+    - HPCA 2018、NOCS 2013、ICCAD 2009 最佳论文候选。
+    - NOCS 2015 最佳论文奖及 EU HiPEAC Paper Awards。
+    - IEEE Transactions on Computers 2020 年 9 月月度特色论文。
+    - PHMAP 2023 最佳论文奖与 Young Pioneer Award。
+    - IEEE ICPHM 2024 Academic Paper Award。
+  services:
+    - 自 2019 年起担任 ACM TACO 副编辑。
+    - 获推荐担任 ACM TODAES 副编辑。
+    - HiPEAC 2017 General Chair、NOCS 2017 TPC Chair、NOCS 2018 General Chair。
+  education: 1989 年获北京师范大学无线电电子学学士学位；2002 年、2007 年分别获瑞典皇家理工学院片上系统设计硕士和电子系统设计博士学位；2012 年获图尔库大学创新与增长 MBA 学位。

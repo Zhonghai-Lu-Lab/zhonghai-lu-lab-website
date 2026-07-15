@@ -6,47 +6,149 @@ name:
   display: Prof. Zhonghai Lu
   given: Zhonghai
   family: Lu
-role: Professor · Principal Investigator
+  chinese: 鲁中海
+role: Professor
+degree: PhD in Electronic Systems Design
+degree_institution: KTH Royal Institute of Technology, 2007
+office: E3 L6 608
+email: zhl@hkust-gz.edu.cn
 bio: |
-  Zhonghai Lu is a Professor in the Thrust of Microelectronics at The Hong Kong University of Science and Technology (Guangzhou). His research spans Network-on-Chip and System-on-Chip, computing system architecture, embedded machine learning and AI accelerators, chiplet networks, and prognostics and health management of electronic chips and systems.
+  Zhonghai Lu is a Professor in the Thrust of Microelectronics at The Hong Kong University of Science and Technology (Guangzhou). His work focuses on networked and intelligent computing systems, spanning Network-on-Chip, chiplet architectures, embedded machine learning, AI acceleration, and electronic-system reliability.
 affiliations:
   - name: Thrust of Microelectronics, HKUST(GZ)
-avatar: https://hrapi.hkust-gz.edu.cn/photo/img?key=00011A1000000001Q9NT
+avatar: /images/team/zhonghai-lu.jpg
 links:
   - icon: website
     url: https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/LU-Zhonghai/zhl
-    label: HKUST(GZ) faculty profile
+    label: HKUST(GZ) Faculty Profile
+  - icon: website
+    url: https://www.kth.se/profile/zhonghai?l=en
+    label: KTH Profile
   - icon: scholar
-    url: https://scholar.google.com/citations?user=8qbwszcAAAAJ&hl=sv
+    url: https://scholar.google.com/citations?user=8qbwszcAAAAJ
     label: Google Scholar
+  - icon: orcid
+    url: https://orcid.org/0000-0003-0061-3475
+    label: ORCID
+  - icon: researcherid
+    url: https://www.webofscience.com/wos/author/record/Zhonghai%20Lu
+    label: ResearcherID
+  - icon: scopus
+    url: https://www.scopus.com/authid/detail.uri?authorId=7404768623
+    label: Scopus ID 7404768623
   - icon: at-symbol
     url: mailto:zhl@hkust-gz.edu.cn
-    label: Email Prof. Zhonghai Lu
+    label: Email
+profile_ids:
+  - label: Google Scholar
+    value: Zhonghai Lu
+    url: https://scholar.google.com/citations?user=8qbwszcAAAAJ
+  - label: ORCID
+    value: 0000-0003-0061-3475
+    url: https://orcid.org/0000-0003-0061-3475
+  - label: ResearcherID
+    value: Zhonghai Lu
+    url: https://www.webofscience.com/wos/author/record/Zhonghai%20Lu
+  - label: Scopus ID
+    value: 7404768623
+    url: https://www.scopus.com/authid/detail.uri?authorId=7404768623
 interests:
-  - Network-on-Chip and Chiplet Networks
+  - Network-on-Chip and Chiplet Network
   - Computing System Architecture
-  - Embedded Machine Learning and AI Accelerators
-  - Reliability and PHM of Electronic Systems
-education:
-  - course: PhD in Electronic Systems Design
-    institution: KTH Royal Institute of Technology
-    year: 2007
-  - course: MBA in Innovation and Growth
-    institution: University of Turku
-    year: 2012
-  - course: MSc in System-on-Chip Design
-    institution: KTH Royal Institute of Technology
-    year: 2002
-  - course: BSc in Radio-electronics
-    institution: Beijing Normal University
-    year: 1989
-experience:
-  - role: Professor
-    organization: The Hong Kong University of Science and Technology (Guangzhou)
-    period: Current
-    summary: Thrust of Microelectronics, Function Hub.
-  - role: Professor of Electronic Systems Design
-    organization: KTH Royal Institute of Technology
-    period: Previous appointment
-    summary: Former Program Director for the Embedded Systems master's programme and Director of Studies in Electronics and Embedded Systems.
-awards: []
+  - Embedded Machine Learning
+  - Reliability of Electronic Systems
+overview:
+  position: Professor with The Hong Kong University of Science and Technology (Guangzhou).
+  previous: Previously, Professor of Electronic Systems Design, specializing in Dependable and Autonomous Systems, at the School of Electrical Engineering and Computer Science, KTH Royal Institute of Technology. At KTH, he served as Program Director for the Embedded Systems master's programme and as Director of Studies in Electronics and Embedded Systems.
+  research:
+    - My research spans Network-on-Chip and System-on-Chip, computer system architecture, electronic design automation, embedded systems, and prognostics and health management of electronic chips and systems.
+    - My group works on in-network processing, embedded machine learning and AI accelerators, chiplet networks and architectures, and PHM of electronic chips and systems. We combine computation and communication for performance and power co-optimization, while using hardware acceleration and AI to address problems in computer architecture and embedded systems.
+  support: I received research gifts from Intel Corporation in 2011–2013 and secured individual grants from the Swedish Research Council in 2014 and 2020.
+  publications: I have authored more than 240 scientific papers. Complete publication records are provided below from DBLP, with additional links to Google Scholar and ORCID.
+  awards:
+    - Best Paper Candidate nominations at HPCA 2018, NOCS 2013, and ICCAD 2009.
+    - Best Paper Award at NOCS 2015 and EU HiPEAC Paper Awards.
+    - IEEE Transactions on Computers Featured Paper of the Month, September 2020.
+    - Best Paper Award and Young Pioneer Award at PHMAP 2023.
+    - Academic Paper Award at IEEE ICPHM 2024.
+  services:
+    - Associate Editor, ACM Transactions on Architecture and Code Optimization (TACO), since 2019.
+    - Recommended Associate Editor, ACM Transactions on Design Automation of Electronic Systems (TODAES).
+    - General Chair, HiPEAC 2017; TPC Chair, NOCS 2017; General Chair, NOCS 2018.
+  education: BSc in Radio-electronics, Beijing Normal University (1989); MSc in System-on-Chip Design and PhD in Electronic Systems Design, KTH Royal Institute of Technology (2002, 2007); MBA in Innovation and Growth, University of Turku (2012).
+featured_publications:
+  - year: 2025
+    title: Health Condition Prediction of Power Diodes Using Particle Filter
+    authors: Chao Guo; Zhonghai Lu
+    venue: PHM-Annual 2025
+    url: https://repository.hkust-gz.edu.cn/itemDetail?id=2075426830712631298
+  - year: 2025
+    title: Applying Reinforcement Learning to Protect Deep Neural Networks from Soft Errors
+    authors: Peng Su; Yuhang Li; Zhonghai Lu; Dejiu Chen
+    venue: Sensors, 25(13)
+    url: https://repository.hkust-gz.edu.cn/itemDetail?id=1950474479758012417
+  - year: 2025
+    title: Pooling On-the-go for NoC-based Convolutional Neural Network Accelerator
+    authors: Wenyao Zhu; Yizhi Chen; Zhonghai Lu
+    venue: SAMOS
+    url: https://repository.hkust-gz.edu.cn/itemDetail?id=1947852143305224194
+  - year: 2025
+    title: Bit Transition Reduction by Data Transmission Ordering in NoC-Based DNN Accelerator
+    authors: Yizhi Chen; Jingwei Li; Wenyao Zhu; Zhonghai Lu
+    venue: IEEE SOCC 2025
+    url: https://repository.hkust-gz.edu.cn/itemDetail?id=1947852143112286210
+  - year: 2025
+    title: "NoCDAS: A Cycle-Accurate NoC-Based Deep Neural Network Accelerator Simulator"
+    authors: Wenyao Zhu; Yizhi Chen; Zhonghai Lu
+    venue: ACM Transactions on Modeling and Computer Simulation
+    url: https://repository.hkust-gz.edu.cn/itemDetail?id=1947855062368841729
+  - year: 2025
+    title: "AsLDPC: Improving Decoding Performance with Absorbing Set Characteristic Aware Low-Density Parity-Check Code"
+    authors: Lanlan Cui; Fei Wu; Xiaojian Liu; Meng Zhang; Zhonghai Lu; Miao Li; Changsheng Xie
+    venue: IEEE Transactions on Consumer Electronics
+    url: https://repository.hkust-gz.edu.cn/itemDetail?id=1947855062222041089
+  - year: 2025
+    title: High-Precision Low-Latency Method and Architecture for Computing Binary and Decimal Logarithms
+    authors: Hui Chen; Lianghua Quan; Weiqiang Liu; Zhonghai Lu
+    venue: IEEE Transactions on VLSI Systems
+    url: https://repository.hkust-gz.edu.cn/itemDetail?id=1947855062297538561
+  - year: 2024
+    title: Travel Time-Based Task Mapping for NoC-Based DNN Accelerator
+    authors: Yizhi Chen; Wenyao Zhu; Zhonghai Lu
+    venue: SAMOS
+    url: https://repository.hkust-gz.edu.cn/itemDetail?id=1947852143368138753
+  - year: 2024
+    title: "MCLB: Dynamic Load Balancing and Implications on GPU Memory Controllers"
+    authors: Vahid Geraeinejad; Kun-Chih Jimmy; Zhonghai Lu; Masoumeh Ebrahimi
+    venue: IEEE SOCC 2024
+    url: https://repository.hkust-gz.edu.cn/itemDetail?id=1947852143242309634
+  - year: 2024
+    title: Impact of Image Sensor Input Faults on Pruned Neural Networks for Object Detection
+    authors: Yizhi Chen; Wenyao Zhu; Dejiu Chen; Omar Mohammed; Parthib Khound; Zhonghai Lu
+    venue: IEEE DFT 2024
+    url: https://repository.hkust-gz.edu.cn/itemDetail?id=1947852143183589378
+  - year: 2024
+    title: Communication Synchronization Aware Arbitration Policy in NoC-Based DNN Accelerators
+    authors: Wenjie Fan; Siyue Li; Lingxiao Zhu; Zhonghai Lu; Li Li; Yuxiang Fu
+    venue: IEEE Transactions on Circuits and Systems II
+    url: https://repository.hkust-gz.edu.cn/itemDetail?id=1947855062708580353
+  - year: 2024
+    title: Amputee Gait Phase Recognition Using Multiple GMM-HMM
+    authors: Wenyao Zhu; Zhenbang Liu; Yizhi Chen; Dejiu Chen; Zhonghai Lu
+    venue: IEEE Access
+    url: https://repository.hkust-gz.edu.cn/itemDetail?id=1947855062641471489
+  - year: 2024
+    title: Heterogeneous Reconfigurable Accelerator for Homomorphic Evaluation on Encrypted Data
+    authors: Wenqing Song; Sirui Shen; Congwei Xu; Yilin Wang; Xinyu Wang; Yuxiang Fu; Li Li; Zhonghai Lu
+    venue: IEEE Access
+    url: https://repository.hkust-gz.edu.cn/itemDetail?id=1947855062570168322
+  - year: 2024
+    title: Automatic Generation and Optimization Framework of NoC-Based Neural Network Accelerator Through Reinforcement Learning
+    authors: Yongqi Xue; Jinlun Ji; Xinming Yu; Shize Zhou; Siyue Li; Xinyi Li; Tong Cheng; Shiping Li; Kai Chen; Zhonghai Lu; Li Li; Yuxiang Fu
+    venue: IEEE Transactions on Computers
+    url: https://repository.hkust-gz.edu.cn/itemDetail?id=1947855062507253762
+  - year: 2024
+    title: Integrating Self-Organizing Map and Graph Neural Networks to Detect Anomalies in Time-series Data
+    authors: Peng Su; Hengzhen Yuan; Zhonghai Lu; Dejiu Chen
+    venue: IEEE Sensors Journal
+    url: https://repository.hkust-gz.edu.cn/itemDetail?id=1947855062435950594

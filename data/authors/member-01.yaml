@@ -3,9 +3,9 @@ slug: member-01
 weight: 10
 name: {display: Hongji Pei, given: Hongji, family: Pei}
 role: PhD Student
-bio: PhD student in Microelectronics at HKUST(GZ). Detailed biography and research interests are awaiting confirmation by the member.
+bio: PhD student in Microelectronics at HKUST(GZ).
 affiliations:
   - name: Thrust of Microelectronics, HKUST(GZ)
-interests: [Research interests to be confirmed]
+interests: [Microelectronics]
 links:
   - {icon: at-symbol, url: 'mailto:hpei838@connect.hkust-gz.edu.cn', label: Email Hongji Pei}
