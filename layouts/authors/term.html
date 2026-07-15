@@ -96,8 +96,8 @@
         {{ range sort (where hugo.Data.team.members "group" "PhD Students") "weight" }}
           {{ $student := partial "lab/person.html" (dict "slug" .slug "lang" $.Site.Language.Lang) }}
           <a class="rpg-card" href="{{ printf "authors/%s/" .slug | relLangURL }}">
-            <span>{{ substr $student.name.display 0 1 }}</span>
-            <div><h3>{{ $student.name.display }}</h3><p>{{ if $zh }}博士研究生 · 微电子学{{ else }}Doctor of Philosophy · Microelectronics{{ end }}</p></div>
+            <div class="rpg-card-visual">{{ with $student.avatar }}<img src="{{ . | relURL }}" alt="{{ $student.name.display }}">{{ else }}<span>{{ substr $student.name.display 0 1 }}</span>{{ end }}</div>
+            <div class="rpg-card-body"><h3>{{ $student.name.display }}</h3><p>{{ if $zh }}博士研究生{{ else }}Doctor of Philosophy{{ end }}</p><small>{{ if $zh }}微电子学{{ else }}Microelectronics{{ end }}</small></div>
           </a>
         {{ end }}
       </div>
