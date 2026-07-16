@@ -1,9 +1,9 @@
 ---
-title: Integrated circuits topic — to be confirmed
-summary: Keep the homepage concise; use this detail page for methods, results, and resources.
-eyebrow: Integrated Circuits
+title: Electronic Design Automation
+summary: Methods and tools that support the design, analysis, and optimization of electronic systems.
+eyebrow: Design Automation
 number: '03'
 weight: 3
 ---
 
-Add the official topic text after internal review.
+This direction focuses on electronic design automation for complex chips and systems.

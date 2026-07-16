@@ -53,10 +53,11 @@ profile_ids:
     value: 7404768623
     url: https://www.scopus.com/authid/detail.uri?authorId=7404768623
 interests:
-  - Network-on-Chip and Chiplet Network
-  - Computing System Architecture
-  - Embedded Machine Learning
-  - Reliability of Electronic Systems
+  - Network-on-Chip/System-on-Chip
+  - Computer System Architecture
+  - Electronic Design Automation
+  - Embedded Systems
+  - Prognostics and Health Management (PHM) of Electronic Chips and Systems
 overview:
   position: Professor with The Hong Kong University of Science and Technology (Guangzhou).
   previous: Previously, Professor of Electronic Systems Design, specializing in Dependable and Autonomous Systems, at the School of Electrical Engineering and Computer Science, KTH Royal Institute of Technology. At KTH, he served as Program Director for the Embedded Systems master's programme and as Director of Studies in Electronics and Embedded Systems.
@@ -72,9 +73,8 @@ overview:
     - Best Paper Award and Young Pioneer Award at PHMAP 2023.
     - Academic Paper Award at IEEE ICPHM 2024.
   services:
-    - Associate Editor, ACM Transactions on Architecture and Code Optimization (TACO), since 2019.
-    - Recommended Associate Editor, ACM Transactions on Design Automation of Electronic Systems (TODAES).
-    - General Chair, HiPEAC 2017; TPC Chair, NOCS 2017; General Chair, NOCS 2018.
+    - Prof. Lu has been appointed as Associate Editor for ACM Transactions on Architecture and Code Optimization (TACO) (CCF Class A) since 2019. Recently he was recommended to be Associate Editor for ACM Transactions on Design Automation of Electronic Systems (TODAES) (CCF Class B).
+    - I was honored to be a General Chair for HiPEAC’2017 held in Stockholm, TPC Chair for NOCS’2017 held in Seoul, South Korea, and General Chair for NOCS’2018 held in Turin, Italy.
   education: BSc in Radio-electronics, Beijing Normal University (1989); MSc in System-on-Chip Design and PhD in Electronic Systems Design, KTH Royal Institute of Technology (2002, 2007); MBA in Innovation and Growth, University of Turku (2012).
 featured_publications:
   - year: 2025

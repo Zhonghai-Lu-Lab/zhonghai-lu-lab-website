@@ -12,10 +12,11 @@ bio: |
 affiliations:
   - name: 香港科技大学（广州）微电子学域
 interests:
-  - 片上网络与芯粒网络
-  - 计算系统体系结构
-  - 嵌入式机器学习
-  - 电子系统可靠性
+  - 片上网络/片上系统
+  - 计算机系统体系结构
+  - 电子设计自动化
+  - 嵌入式系统
+  - 电子芯片与系统故障预测与健康管理（PHM）
 overview:
   position: 现任香港科技大学（广州）教授。
   previous: 曾任瑞典皇家理工学院电子系统设计教授，研究方向为可信与自主系统；曾担任嵌入式系统硕士项目主任，以及电子与嵌入式系统部门教学负责人。
@@ -31,7 +32,6 @@ overview:
     - PHMAP 2023 最佳论文奖与 Young Pioneer Award。
     - IEEE ICPHM 2024 Academic Paper Award。
   services:
-    - 自 2019 年起担任 ACM TACO 副编辑。
-    - 获推荐担任 ACM TODAES 副编辑。
-    - HiPEAC 2017 General Chair、NOCS 2017 TPC Chair、NOCS 2018 General Chair。
+    - 鲁中海教授自 2019 年起担任 ACM Transactions on Architecture and Code Optimization（TACO，CCF A 类）副编辑，近期获推荐担任 ACM Transactions on Design Automation of Electronic Systems（TODAES，CCF B 类）副编辑。
+    - 曾担任在斯德哥尔摩举行的 HiPEAC 2017 General Chair、在韩国首尔举行的 NOCS 2017 TPC Chair，以及在意大利都灵举行的 NOCS 2018 General Chair。
   education: 1989 年获北京师范大学无线电电子学学士学位；2002 年、2007 年分别获瑞典皇家理工学院片上系统设计硕士和电子系统设计博士学位；2012 年获图尔库大学创新与增长 MBA 学位。

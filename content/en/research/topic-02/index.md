@@ -1,9 +1,9 @@
 ---
-title: Systems topic — to be confirmed
-summary: Connect this topic to projects, publications, people, and news through stable slugs.
-eyebrow: Systems
+title: Computer System Architecture
+summary: Research on the organization, performance, efficiency, and reliability of computer systems.
+eyebrow: Architecture
 number: '02'
 weight: 2
 ---
 
-This is a structured placeholder rather than a claim about the lab’s current research.
+This direction studies computer system architecture with emphasis on efficient and dependable computing platforms.
