@@ -67,3 +67,57 @@ collections:
       - {label: 进入轮播, name: featured, widget: boolean, default: true}
       - {label: 顺序, name: weight, widget: number, default: 10}
       - {label: 正文, name: body, widget: markdown}
+  - name: publications_en
+    label: Publications (English)
+    folder: content/en/publications
+    create: true
+    path: '{{slug}}/index'
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Date, name: date, widget: datetime, time_format: false}
+      - {label: Authors, name: authors, widget: string}
+      - {label: Venue, name: venue, widget: string, hint: "Journal or conference name"}
+      - {label: Year, name: year, widget: number}
+      - {label: DOI, name: doi, widget: string, required: false}
+      - {label: PDF, name: pdf, widget: string, required: false, hint: "Path to the PDF inside the static folder, e.g. /uploads/papers/filename.pdf"}
+      - {label: Summary, name: summary, widget: text}
+      - {label: Body, name: body, widget: markdown}
+  - name: publications_zh
+    label: 出版物（中文）
+    folder: content/zh/publications
+    create: true
+    path: '{{slug}}/index'
+    fields:
+      - {label: 标题, name: title, widget: string}
+      - {label: 日期, name: date, widget: datetime, time_format: false}
+      - {label: 作者, name: authors, widget: string}
+      - {label: 发表场所, name: venue, widget: string, hint: "期刊或会议名称"}
+      - {label: 年份, name: year, widget: number}
+      - {label: DOI, name: doi, widget: string, required: false}
+      - {label: PDF, name: pdf, widget: string, required: false, hint: "PDF 相对路径，例如 /uploads/papers/filename.pdf"}
+      - {label: 摘要, name: summary, widget: text}
+      - {label: 正文, name: body, widget: markdown}
+  - name: awards_en
+    label: Awards (English)
+    folder: content/en/awards
+    create: true
+    path: '{{slug}}/index'
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Date, name: date, widget: datetime, time_format: false}
+      - {label: Awarder, name: awarder, widget: string, hint: "Organization or program granting the award"}
+      - {label: Level, name: level, widget: string, hint: "Optional, e.g. National / Provincial / University"}
+      - {label: Summary, name: summary, widget: text}
+      - {label: Body, name: body, widget: markdown}
+  - name: awards_zh
+    label: 奖项（中文）
+    folder: content/zh/awards
+    create: true
+    path: '{{slug}}/index'
+    fields:
+      - {label: 标题, name: title, widget: string}
+      - {label: 日期, name: date, widget: datetime, time_format: false}
+      - {label: 颁奖方, name: awarder, widget: string, hint: "颁奖单位或项目名称"}
+      - {label: 级别, name: level, widget: string, hint: "可选，例如 国家级 / 省级 / 校级"}
+      - {label: 摘要, name: summary, widget: text}
+      - {label: 正文, name: body, widget: markdown}
