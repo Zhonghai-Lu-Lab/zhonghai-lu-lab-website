@@ -3,7 +3,7 @@ backend:
   repo: linelyxzz11/zhonghai-lu-lab-website
   branch: main
   base_url: https://zhonghai-lu-lab-oauth.2030115290.workers.dev
-  auth_type: external
+  auth_type: pkce
 
 publish_mode: editorial_workflow
 media_folder: static/images/uploads
