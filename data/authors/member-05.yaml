@@ -1,5 +1,4 @@
 schema: hugoblox/author/v1
-cms_type: member
 slug: member-05
 weight: 50
 name: {display: Yizhe Xiong, given: Yizhe, family: Xiong}

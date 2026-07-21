@@ -1,15 +1,17 @@
 ---
-cms_managed: true
 title: Open positions in the lab
 date: 2026-06-15
 kicker: Join the Team
-summary: Highlight active PhD, postdoctoral, and research assistant opportunities without leaving expired openings on the homepage.
+summary: Explore opportunities for PhD students, postdoctoral fellows, and research assistants.
 hero: /images/hero-team.jpg
-hero_alt: Team workflow placeholder; replace with an approved lab or campus photograph.
-button: View opportunities
-target: '#join-us'
+hero_alt: Researchers collaborating in a modern laboratory environment.
+actions:
+  - label: PhD Students
+    url: /opportunities/phd/
+  - label: Postdoctoral Fellows
+    url: /opportunities/postdoc/
+  - label: Research Assistants
+    url: /opportunities/research-assistant/
 featured: true
 weight: 3
 ---
-
-Add recruitment details here and set `featured: false` when the announcement should leave the carousel.

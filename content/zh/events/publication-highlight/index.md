@@ -1,15 +1,13 @@
 ---
-cms_managed: true
-title: 重点论文或会议成果
+title: PHM-AP 2025 数据挑战赛冠军
 date: 2026-06-30
-kicker: 成果精选
-summary: 作为论文、项目、代码、幻灯片和视频等完整资源的图像化入口。
-hero: /images/hero-publication.jpg
-hero_alt: 技术图片占位，后续替换为经过确认的论文 teaser。
-button: 浏览成果
-target: '#publications'
+kicker: 团队成果
+summary: 香港科技大学（广州）微电子学域团队获得 PHM-AP 2025 数据挑战赛冠军。
+hero: /images/news/phm-ap-2025-champion.png
+hero_alt: 展示获奖团队的 PHM-AP 2025 数据挑战赛冠军海报。
+hero_mode: poster
+button: 查看获奖消息
+target: '/zh/news/phm-ap-2025-data-challenge-champion/'
 featured: true
 weight: 2
 ---
-
-这里补充核实后的成果介绍与资源链接。

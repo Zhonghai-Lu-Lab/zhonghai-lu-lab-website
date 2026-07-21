@@ -1,15 +1,12 @@
 ---
-cms_managed: true
-title: Important lab event — title to be confirmed
+title: Research Directions
 date: 2026-07-13
-kicker: Featured Event
-summary: Replace this summary with a verified description of the lab’s most important recent event.
-hero: /images/hero-event.jpg
-hero_alt: Conference venue placeholder; replace with an official lab event image.
-button: Read the story
-target: '#news'
+kicker: Microelectronics Research
+summary: Explore our work in integrated systems, computer architecture, design automation, embedded systems, and electronic-system health management.
+hero: /images/hero-microelectronics-v2.jpg
+hero_alt: Advanced microelectronics wafer, chiplets, and on-chip interconnects.
+button: Explore our research
+target: '#research'
 featured: true
 weight: 1
 ---
-
-This page is ready for the full event story. Replace the front matter and Markdown body; the homepage carousel updates automatically.

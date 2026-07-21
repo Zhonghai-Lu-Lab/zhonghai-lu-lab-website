@@ -1,7 +1,3 @@
-schema: hugoblox/author/v1
-cms_type: member
-slug: member-02
-weight: 20
 name:
   display: Jingwei Li
   given: Jingwei

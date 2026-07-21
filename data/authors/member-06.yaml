@@ -1,5 +1,4 @@
 schema: hugoblox/author/v1
-cms_type: member
 slug: member-06
 weight: 60
 name: {display: Jinhuang Lin, given: Jinhuang, family: Lin}

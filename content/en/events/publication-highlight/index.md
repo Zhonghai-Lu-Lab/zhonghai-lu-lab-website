@@ -1,15 +1,13 @@
 ---
-cms_managed: true
-title: Featured publication or conference result
+title: PHM-AP 2025 Data Challenge Champion
 date: 2026-06-30
-kicker: Publication Highlight
-summary: A visual entry point for a selected paper, project, code repository, slide deck, or video.
-hero: /images/hero-publication.jpg
-hero_alt: Technology illustration placeholder; replace with an approved paper teaser.
-button: Explore the result
-target: '#publications'
+kicker: Team Achievement
+summary: The HKUST(GZ) Microelectronics team won first place in the PHM-AP 2025 Data Challenge.
+hero: /images/news/phm-ap-2025-champion.png
+hero_alt: PHM-AP 2025 Data Challenge championship poster featuring the winning team.
+hero_mode: poster
+button: Read the award story
+target: '/news/phm-ap-2025-data-challenge-champion/'
 featured: true
 weight: 2
 ---
-
-Add the verified publication story and links here.

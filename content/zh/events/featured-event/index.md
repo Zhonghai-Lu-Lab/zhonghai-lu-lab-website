@@ -1,15 +1,12 @@
 ---
-cms_managed: true
-title: 课题组重要事件——标题待确认
+title: 研究方向
 date: 2026-07-13
-kicker: 重点事件
-summary: 请替换为课题组近期重要事件的正式摘要，说明发生了什么以及为什么值得关注。
-hero: /images/hero-event.jpg
-hero_alt: 会议现场占位图，正式发布前请替换为课题组活动图片。
-button: 查看详情
-target: '#news'
+kicker: 微电子研究
+summary: 探索课题组在集成系统、计算机体系结构、设计自动化、嵌入式系统和电子系统健康管理方面的研究。
+hero: /images/hero-microelectronics-v2.jpg
+hero_alt: 展示先进微电子晶圆、芯粒与片上互连的技术背景图。
+button: 浏览研究方向
+target: '#research'
 featured: true
 weight: 1
 ---
-
-这里填写完整事件内容。修改本页的字段与 Markdown 正文后，首页轮播会自动更新。
