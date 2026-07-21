@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: linelyxzz11/zhonghai-lu-lab-website
+  repo: Zhonghai-Lu-Lab/zhonghai-lu-lab-website
   branch: main
-  base_url: https://zhonghai-lu-lab-website.pages.dev
-  auth_endpoint: /auth
+  base_url: https://zhonghai-lu-lab-oauth.2030115290.workers.dev
+  auth_type: pkce
   site_domain: zhonghai-lu-lab-website.pages.dev
 
 publish_mode: editorial_workflow
