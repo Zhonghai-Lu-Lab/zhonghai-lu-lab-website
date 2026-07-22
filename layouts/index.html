@@ -44,7 +44,7 @@
     <section id="hero" class="hero" aria-roledescription="carousel" aria-label="{{ if $zh }}重要事件{{ else }}Featured lab events{{ end }}" data-carousel>
       <div class="hero-slides">
         {{ range $index, $event := $events }}
-        <article class="hero-slide{{ if eq $index 0 }} is-active{{ end }}{{ if eq $event.Params.hero_mode "poster" }} is-poster{{ end }}" data-slide="{{ $index }}" style="--slide-image: url('{{ $event.Params.hero }}')" aria-hidden="{{ if eq $index 0 }}false{{ else }}true{{ end }}">
+        <article class="hero-slide{{ if eq $index 0 }} is-active{{ end }}{{ if eq $event.Params.hero_mode "poster" }} is-poster{{ end }}" data-slide="{{ $index }}" style="--slide-image: url('{{ $event.Params.hero }}'){{ with $event.Params.hero_position }}; --hero-position: {{ . }}{{ end }}" aria-hidden="{{ if eq $index 0 }}false{{ else }}true{{ end }}">
           <div class="hero-image" role="img" aria-label="{{ $event.Params.hero_alt }}"></div>
           {{ if eq $event.Params.hero_mode "poster" }}<div class="hero-poster" aria-hidden="true"></div>{{ end }}
           <div class="hero-shade"></div>

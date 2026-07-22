@@ -44,7 +44,7 @@ button { font: inherit; }
 .hero-slides, .hero-slide { position: absolute; inset: 0; }
 .hero-slide { opacity: 0; visibility: hidden; transition: opacity .9s var(--ease), visibility .9s; }
 .hero-slide.is-active { opacity: 1; visibility: visible; }
-.hero-image { position: absolute; inset: -3%; background-image: var(--slide-image); background-size: cover; background-position: center; transform: scale(1.08); transition: transform 8s linear; }
+.hero-image { position: absolute; inset: -3%; background-image: var(--slide-image); background-size: cover; background-position: var(--hero-position, center); transform: scale(1.08); transition: transform 8s linear; }
 .hero-slide.is-active .hero-image { transform: scale(1); }
 .hero-slide.is-poster .hero-image { filter: blur(18px) saturate(.72); opacity: .48; transform: scale(1.12); }
 .hero-slide.is-poster.is-active .hero-image { transform: scale(1.05); }
