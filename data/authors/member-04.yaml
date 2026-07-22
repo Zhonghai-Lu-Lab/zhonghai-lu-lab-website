@@ -1,10 +1,21 @@
 schema: hugoblox/author/v1
 slug: member-04
 weight: 40
-name: {display: Yushang Jin, given: Yushang, family: Jin}
-role: PhD Student
-bio: PhD student in Microelectronics at HKUST(GZ).
+name:
+  display: Yushang Jin
+  given: Yushang
+  family: Jin
+  chinese: 金羽商
+role: PhD Student (2026 Spring Intake)
+avatar: /images/team/yushang-jin.jpg
+bio: |
+  Yushang Jin received the B.Eng. degree in electronic engineering from The University of Hong Kong in 2025. He is currently pursuing the Ph.D. degree with the Microelectronics Thrust, The Hong Kong University of Science and Technology (Guangzhou). His research focuses on networks-on-chip and hardware architectures for AI acceleration. He is also interested in embedded systems and FPGA-based design.
 affiliations:
   - name: Thrust of Microelectronics, HKUST(GZ)
-interests: [Microelectronics]
-links: []
+interests:
+  - Network-on-Chip
+  - AI Accelerator
+links:
+  - icon: github
+    url: https://github.com/EricEricEricJin
+    label: GitHub

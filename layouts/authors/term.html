@@ -105,7 +105,25 @@
   </article>
 {{ else }}
   <article class="profile-shell">
-    <div class="profile-hero"><div class="profile-visual">{{ with $person.avatar }}<img src="{{ . | relURL }}" alt="{{ $person.name.display }}">{{ else }}<div class="profile-monogram">{{ substr $person.name.display 0 1 }}</div>{{ end }}</div><div class="profile-intro"><h1>{{ $person.name.display }}</h1>{{ range $person.affiliations }}<p class="profile-affiliation">{{ .name }}</p>{{ end }}<p class="profile-bio">{{ $person.bio }}</p>{{ with $person.links }}<nav class="profile-links profile-links-large">{{ range . }}<a href="{{ .url }}"{{ if hasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }} aria-label="{{ .label }}" title="{{ .label }}">{{ partial "lab/profile-icon.html" .icon }}</a>{{ end }}</nav>{{ end }}</div></div>
+    <div class="profile-hero"><div class="profile-visual">{{ with $person.avatar }}<img src="{{ . | relURL }}" alt="{{ $person.name.display }}">{{ else }}<div class="profile-monogram">{{ substr $person.name.display 0 1 }}</div>{{ end }}</div><div class="profile-intro"><h1>{{ $person.name.display }}</h1>{{ with $person.name.chinese }}<p class="faculty-chinese-name">{{ . }}</p>{{ end }}{{ range $person.affiliations }}<p class="profile-affiliation">{{ .name }}</p>{{ end }}<p class="profile-bio">{{ $person.bio }}</p>{{ with $person.links }}<nav class="profile-links profile-links-large">{{ range . }}<a href="{{ .url }}"{{ if hasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }} aria-label="{{ .label }}" title="{{ .label }}">{{ partial "lab/profile-icon.html" .icon }}</a>{{ end }}</nav>{{ end }}</div></div>
+
+    {{ with $person.interests }}
+    <section class="profile-section">
+      <h2>{{ if $zh }}兴趣方向{{ else }}Research interests{{ end }}</h2>
+      <div class="research-interest-grid">{{ range $person.interests }}<article><span></span><h3>{{ . }}</h3></article>{{ end }}</div>
+    </section>
+    {{ end }}
+
+    {{ with $person.achievements }}
+    <section class="profile-section">
+      <h2>{{ if $zh }}代表性成果{{ else }}Representative publications{{ end }}</h2>
+      <ul class="profile-achievements">
+        {{ range . }}
+        <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ with .venue }}<span class="profile-achievement-meta"> · {{ . }}{{ with $.Site.Language.Lang }}{{ end }}</span>{{ end }}</li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
   </article>
 {{ end }}
 {{ end }}

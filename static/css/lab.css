@@ -316,6 +316,15 @@ a:hover .inline-link span { transform: translateX(5px); }
 .profile-bio { max-width: 650px; color: var(--muted); font-size: 15px; }
 .profile-links-large { width: fit-content; margin-top: 30px; }
 .profile-links-large a { width: 42px; height: 42px; border-color: var(--line); }
+.profile-section { margin-top: 64px; padding-top: 48px; border-top: 1px solid var(--line); }
+.profile-section h2 { margin: 0 0 22px; font-family: Georgia,"Times New Roman","Noto Serif SC",serif; font-size: clamp(28px,2.6vw,40px); font-weight: 500; letter-spacing: -.025em; }
+.profile-achievements { list-style: none; margin: 0; padding: 0; }
+.profile-achievements li { padding: 18px 0; border-bottom: 1px solid var(--line); }
+.profile-achievements li:first-child { padding-top: 0; }
+.profile-achievements li:last-child { border-bottom: 0; }
+.profile-achievements a { color: var(--ink); text-decoration: none; font-family: Inter,"Helvetica Neue",Arial,sans-serif; font-size: 16px; line-height: 1.45; }
+.profile-achievements a:hover { color: var(--gold); }
+.profile-achievement-meta { color: var(--muted); font-size: 13px; margin-left: 6px; }
 .profile-links-large svg { width: 19px; height: 19px; }
 .profile-section { padding: 58px 0; border-top: 1px solid var(--line); }
 .profile-section h2 { margin: 0 0 28px; font-family: Georgia,serif; font-size: 34px; font-weight: 500; }
